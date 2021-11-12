@@ -61,7 +61,7 @@ function GetAllAssets(props) {
                 </section> 
                 <hr />
                 <div>
-                    <p class="text-center d-block"><a href={back} class="btn btn-small btn-primary" >Go back</a></p>
+                    <p className="text-center d-block"><a href={back} className="btn btn-small btn-primary" >Go back</a></p>
                 </div>
                
             </div>
@@ -82,7 +82,7 @@ function GetAllAssets(props) {
                     </section> 
                     <hr />
                     <div>
-                        <p class="text-center d-block"><a href={back} class="btn btn-small btn-primary" >Go back</a></p>
+                        <p className="text-center d-block"><a href={back} className="btn btn-small btn-primary" >Go back</a></p>
                     </div>
                    
                 </div>

@@ -12,7 +12,7 @@ function Error(props) {
                     <hr />
                 </section> 
                 <footer>
-                    <p class="text-center d-block"><a href={backLink} class="btn btn-small btn-primary" >Go back</a></p>
+                    <p className="text-center d-block"><a href={backLink} className="btn btn-small btn-primary" >Go back</a></p>
                 </footer>
             
             </div>

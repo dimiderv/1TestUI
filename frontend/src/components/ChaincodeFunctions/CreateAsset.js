@@ -17,6 +17,7 @@ function CreateAsset() {
         
  
         fetchPostReply();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     async function fetchPostReply ()  {
@@ -53,7 +54,7 @@ function CreateAsset() {
     //     fetchItems()
     // };
 
-    console.log(fetchAttempt)
+    console.log(postReply)
 
 
     //show only if assets are available
@@ -67,32 +68,32 @@ function CreateAsset() {
         <div className="container justify-content-center p-5 ">
             <h1 className="mt-5">CreateAsset</h1>
             
-                <div class="form-group w-25 mx-auto">
-                    <label for="assetID" class="col-form-label mx-auto">Asset ID {formInputID}</label>
+                <div className="form-group w-25 mx-auto">
+                    <label htmlFor="assetID" className="col-form-label mx-auto">Asset ID {formInputID}</label>
                     {/* col-xs-3 */}
-                    <div class="col-sm-10 w-10 mx-auto">
-                    <input type="text" class="form-control " required onChange={e=>setFormInputID(e.target.value)} id="assetID" placeholder="asset#"/>
+                    <div className="col-sm-10 w-10 mx-auto">
+                    <input type="text" className="form-control " required onChange={e=>setFormInputID(e.target.value)} id="assetID" placeholder="asset#"/>
                     </div>
                 </div>
 
               
-                <div class="form-group w-25 mx-auto">
-                    <label for="color" class="col-form-label mx-auto">Color{formInputColor} </label>
-                    <div class="col-sm-10 mx-auto">
-                    <input type="text" class="form-control" onChange={e=>setFormInputColor(e.target.value)} id="color" placeholder="color"/>
+                <div className="form-group w-25 mx-auto">
+                    <label htmlFor="color" className="col-form-label mx-auto">Color{formInputColor} </label>
+                    <div className="col-sm-10 mx-auto">
+                    <input type="text" className="form-control" onChange={e=>setFormInputColor(e.target.value)} id="color" placeholder="color"/>
                     </div>
                 </div>
-                <div class="form-group w-25 mx-auto">
-                    <label for="color" class="col-form-label mx-auto">Weight  {formInputWeight}</label>
-                    <div class="col-sm-10 mx-auto">
-                    <input type="number" class="form-control" onChange={e=>setFormInputWeight(e.target.value)} id="weight" placeholder="weight"/>
+                <div className="form-group w-25 mx-auto">
+                    <label htmlFor="color" className="col-form-label mx-auto">Weight  {formInputWeight}</label>
+                    <div className="col-sm-10 mx-auto">
+                    <input type="number" className="form-control" onChange={e=>setFormInputWeight(e.target.value)} id="weight" placeholder="weight"/>
                     </div>
                 </div>
 
 
-                <div class="form-group row d-block">
-                    <div class="col-sm-12">
-                        <button type="submit" value="Send" onClick={fetchPostReply} class="btn btn-primary">Create</button>
+                <div className="form-group row d-block">
+                    <div className="col-sm-12">
+                        <button type="submit" value="Send" onClick={fetchPostReply} className="btn btn-primary">Create</button>
                         {/* onClickCapture also worked */}
                     </div>
                 </div>
@@ -111,7 +112,7 @@ function CreateAsset() {
                         </section> 
                         <hr />
                         <div>
-                            <p class="text-center d-block"><a href="/farmerFrontPage" class="btn btn-small btn-primary" >Go back</a></p>
+                            <p className="text-center d-block"><a href="/farmerFrontPage" className="btn btn-small btn-primary" >Go back</a></p>
                         </div>
                     
                     </div>
@@ -167,7 +168,7 @@ export default CreateAsset;
 //             </section> 
 //             <hr />
 //             <div>
-//                 <p class="text-center d-block"><a href="/farmerFrontPage" class="btn btn-small btn-primary" >Go back</a></p>
+//                 <p className="text-center d-block"><a href="/farmerFrontPage" className="btn btn-small btn-primary" >Go back</a></p>
 //             </div>
            
 //         </div>

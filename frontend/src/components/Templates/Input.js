@@ -28,33 +28,33 @@ function Input() {
     return(
         <div className="container justify-content-center p-5 ">
             <h1 className="mt-5">CreateAsset</h1>
-            <form method="POST" class="border d-block p-20 pr-2"  action="/newAsset">
-                <div class="form-group w-25 mx-auto">
-                    <label for="assetID" class="col-form-label mx-auto">Asset ID</label>
+            <form method="POST" className="border d-block p-20 pr-2"  action="/newAsset">
+                <div className="form-group w-25 mx-auto">
+                    <label htmlFor="assetID" className="col-form-label mx-auto">Asset ID</label>
                     {/* col-xs-3 */}
-                    <div class="col-sm-10 w-10 mx-auto">
-                    <input type="text" class="form-control " id="assetID" placeholder="asset#"/>
+                    <div className="col-sm-10 w-10 mx-auto">
+                    <input type="text" className="form-control " id="assetID" placeholder="asset#"/>
                     </div>
                 </div>
 
               
-                <div class="form-group w-25 mx-auto">
-                    <label for="color" class="col-form-label mx-auto">Color </label>
-                    <div class="col-sm-10 mx-auto">
-                    <input type="text" class="form-control" id="color" placeholder="color"/>
+                <div className="form-group w-25 mx-auto">
+                    <label htmlFor="color" className="col-form-label mx-auto">Color </label>
+                    <div className="col-sm-10 mx-auto">
+                    <input type="text" className="form-control" id="color" placeholder="color"/>
                     </div>
                 </div>
-                <div class="form-group w-25 mx-auto">
-                    <label for="color" class="col-form-label mx-auto">Weight</label>
-                    <div class="col-sm-10 mx-auto">
-                    <input type="number" class="form-control" id="weight" placeholder="weight"/>
+                <div className="form-group w-25 mx-auto">
+                    <label htmlFor="color" className="col-form-label mx-auto">Weight</label>
+                    <div className="col-sm-10 mx-auto">
+                    <input type="number" className="form-control" id="weight" placeholder="weight"/>
                     </div>
                 </div>
 
 
-                <div class="form-group row d-block">
-                    <div class="col-sm-12">
-                        <button type="submit" value="Send" class="btn btn-primary">Create</button>
+                <div className="form-group row d-block">
+                    <div className="col-sm-12">
+                        <button type="submit" value="Send" className="btn btn-primary">Create</button>
                     </div>
                 </div>
             </form>
@@ -72,7 +72,7 @@ function Input() {
                         </section> 
                         <hr />
                         <div>
-                            <p class="text-center d-block"><a href="/farmerFrontPage" class="btn btn-small btn-primary" >Go back</a></p>
+                            <p className="text-center d-block"><a href="/farmerFrontPage" className="btn btn-small btn-primary" >Go back</a></p>
                         </div>
                     
                     </div>
@@ -111,7 +111,7 @@ export default Input;
     //             </section> 
     //             <hr />
     //             <div>
-    //                 <p class="text-center d-block"><a href="/farmerFrontPage" class="btn btn-small btn-primary" >Go back</a></p>
+    //                 <p className="text-center d-block"><a href="/farmerFrontPage" className="btn btn-small btn-primary" >Go back</a></p>
     //             </div>
                
     //         </div>
