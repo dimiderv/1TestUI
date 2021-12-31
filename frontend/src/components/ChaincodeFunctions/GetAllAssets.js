@@ -67,26 +67,61 @@ function GetAllAssets(props) {
             </div>
         );
     }else if (count){
+            //let products = null;
        
-            return(
-                <div className="mx-auto container-fluid p-5">
-                    <div className="d-block p-5">
-                        <h3>These are the assets </h3>
-                    </div>      
-                    <section>
-                        { 
-                        items.map(item => (
-                            <PrintAssets ID={item.ID} color={item.color} weight={item.weight} owner={item.owner} creator={item.creator} expirationDate={item.expirationDate} />
-                        ))
-                        }
-                    </section> 
-                    <hr />
-                    <div>
-                        <p className="text-center d-block"><a href={back} className="btn btn-small btn-primary" >Go back</a></p>
-                    </div>
+        
+            // products = items.map((item) => (
+            //     // <div className="card p-1 m-2  " style={{width:23+"em"}}>
+            //     //     <div className="col-sm">
+            //     //         <div className="card-body ">
+            //     //             <h4 className="card-header "> {item.ID} </h4>
+            //     //             <p className="card-text "> Color : {item.color}. </p>
+            //     //             <p className="card-text"> Weight (Kg) : {item.weight}. </p>
+            //     //             <p className="card-text"> Owner : {item.owner}. </p>
+            //     //             <p className="card-text "> Creator : {item.creator}. </p>
+            //     //             <p className="card-text"> Exiration : {item.expirationDate}. </p>
+            //     //             <button className="btn btn-primary"> View </button>
+            //     //         </div>
+            //     //     </div>
+            //     // </div>
+            //     <PrintAssets ID={item.ID} color={item.color} weight={item.weight} owner={item.owner} creator={item.creator} expirationDate={item.expirationDate} />
+            // ));
+        
+        
+        return (
+            <div className="d-block p-5 bg-light">
+                 <div className="d-block p-5">
+                         <h3>These are the assets </h3>
+                     </div>
+                     
+                         <div className="d-flex align-items-center 
+                  justify-content-center flex-wrap p-2 m-2 ">{items.map((item) => (
+
+                    <PrintAssets ID={item.ID} color={item.color} weight={item.weight} owner={item.owner} creator={item.creator} expirationDate={item.expirationDate} />
+                ))}</div>
+               
+                
+            </div>
+        );
+            // return(
+            //     <div className="mx-auto container-fluid p-5">
+            //         <div className="d-block p-5">
+            //             <h3>These are the assets </h3>
+            //         </div>      
+            //         <section>
+            //             { 
+            //             items.map(item => (
+            //                 <PrintAssets ID={item.ID} color={item.color} weight={item.weight} owner={item.owner} creator={item.creator} expirationDate={item.expirationDate} />
+            //             ))
+            //             }
+            //         </section> 
+            //         <hr />
+            //         <div>
+            //             <p className="text-center d-block"><a href={back} className="btn btn-small btn-primary" >Go back</a></p>
+            //         </div>
                    
-                </div>
-            );
+            //     </div>
+            // );
       
     }
 

@@ -91,11 +91,12 @@ function ReadAsset(props) {
                         <div className="d-block p-5">
                             <h3>The {postReply.ID}  details are: </h3>
                         </div>      
-                        <section>
+                        <div className="d-flex align-items-center 
+                  justify-content-center flex-wrap p-2 m-2 ">
                         
                                 <PrintAssets ID={postReply.ID} color={postReply.color} weight={postReply.weight} owner={postReply.owner} creator={postReply.creator} expirationDate={postReply.expirationDate} />
                             
-                        </section> 
+                        </div> 
                         <hr />
                         <div>
                             <p className="text-center d-block"><a href={back} className="btn btn-small btn-primary" >Go back</a></p>

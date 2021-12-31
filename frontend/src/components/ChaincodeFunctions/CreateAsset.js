@@ -105,11 +105,12 @@ function CreateAsset() {
                         <div className="d-block p-5">
                             <h3>You created {postReply.ID} with the following details: </h3>
                         </div>      
-                        <section>
+                        <div className="d-flex align-items-center 
+                  justify-content-center flex-wrap p-2 m-2 ">
                         
                                 <PrintAssets ID={postReply.ID} color={postReply.color} weight={postReply.weight} owner={postReply.owner} creator={postReply.creator} expirationDate={postReply.expirationDate} />
                             
-                        </section> 
+                        </div> 
                         <hr />
                         <div>
                             <p className="text-center d-block"><a href="/farmerFrontPage" className="btn btn-small btn-primary" >Go back</a></p>

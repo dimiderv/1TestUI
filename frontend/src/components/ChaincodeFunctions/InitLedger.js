@@ -30,13 +30,14 @@ function InitLedger() {
                     <h3>Init Ledger was called.The assets added are:</h3>
                     
                 </div>      
-                <section>
+                <div className="d-flex align-items-center 
+                  justify-content-center flex-wrap p-2 m-2 ">
                         { 
                         items.map(item => (
                             <PrintAssets ID={item.ID} color={item.color} weight={item.weight} owner={item.owner} creator={item.creator} expirationDate={item.expirationDate} />
                         ))
                         }
-                    </section>
+                    </div>
                 <hr />
                 <div>
                     <p className="text-center d-block"><a href="/farmerFrontPage" className="btn btn-small btn-primary" >Go back</a></p>

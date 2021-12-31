@@ -59,7 +59,7 @@ function GetAssetHistory(props) {
         
 
     };
-    console.log(postReply);
+    console.log("match",props.match);
     
     var count = Object.keys(postReply).length;
     console.log("ITEMS,",count,postReply,"ITEMS[0]",postReply[0],"ITEMS.RECORD",postReply)
@@ -92,11 +92,12 @@ function GetAssetHistory(props) {
                         <div className="d-block p-5">
                             <h3>The {postReply[0].record.ID} exists with history: </h3>
                         </div>      
-                        <section>
+                        <div className="d-flex align-items-center 
+                  justify-content-center flex-wrap p-2 m-2 ">
                         
                                 <PrintHistory ID={postReply[0].record.ID} color={postReply[0].record.color} weight={postReply[0].record.weight} owner={postReply[0].record.owner} creator={postReply[0].record.creator} expirationDate={postReply[0].record.expirationDate} txId={postReply[0].txId} timestamp={postReply[0].timestamp}/>
                             
-                        </section> 
+                        </div> 
                         <hr />
                         <div>
                             <p className="text-center d-block"><a href={back} className="btn btn-small btn-primary" >Go back</a></p>
@@ -108,13 +109,14 @@ function GetAssetHistory(props) {
                         <div className="d-block p-5">
                             <h3>These are the assets </h3>
                         </div>      
-                        <section>
+                        <div className="d-flex align-items-center 
+                  justify-content-center flex-wrap p-2 m-2 ">
                             { 
                             postReply.map(item => (
                                 <PrintHistory ID={item.record.ID} color={item.record.color} weight={item.record.weight} owner={item.record.owner} creator={item.record.creator} expirationDate={item.record.expirationDate} txId={item.txId} timestamp={item.timestamp}/>
                             ))
                             }
-                        </section> 
+                        </div> 
                         <hr />
                         <div>
                             <p className="text-center d-block"><a href={back} className="btn btn-small btn-primary" >Go back</a></p>
